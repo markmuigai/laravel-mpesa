@@ -9,6 +9,6 @@ class MpesaController extends Controller
 {
     public function generateAccessToken()
     {
- 
+        return generateAccessToken();
     }
 }
