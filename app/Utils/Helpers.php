@@ -5,10 +5,10 @@
 function generateAccessToken()
 {
     // Define consumer key daraja
-  $consumer_key="c9I2qDFNRu4sZawjBQ0qpEMipz6gG3Db";
+  $consumer_key= \Config::get('api_keys.MPESA_CONSUMER_KEY');
 
   // Define consumer key in daraja
-  $consumer_secret="IoPXllpTR7W9CAxy";
+  $consumer_secret=\Config::get('api_keys.MPESA_CONSUMER_SECRET');;
 
   // User base64 to combine consumer key and consumer secret
   //  Base64 is simply a group of binary-to-text encoding schemes that represent binary data in an ASCII string format.
