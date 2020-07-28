@@ -15,3 +15,6 @@ use Illuminate\Support\Facades\Route;
 */
 // Generate mpesa access token
 Route::post('v1/access/token', 'MpesaController@generateAccessToken');
+
+// Initiate STK push
+Route::post('v1/laravel-mpesa/stk/push', 'MpesaController@customerMpesaSTKPush');
